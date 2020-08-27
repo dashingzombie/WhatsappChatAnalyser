@@ -30,4 +30,5 @@ for line in fh:
         text.append(line);
 
 data = pd.DataFrame(list(zip(date,time,name,text)), columns =['Date', 'Time','Name','Text'])
+print("hello")
 data.to_excel("chat.xlsx")
